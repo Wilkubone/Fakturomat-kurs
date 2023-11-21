@@ -20,3 +20,4 @@ Route::get('/', function () {
 
 Route::get('/faktury', [InvoicesController::class, 'index'])->name('invoices.index');
 Route::get('/faktury/dodaj', [InvoicesController::class, 'create'])->name('invoices.create');
+Route::post('/faktury/zapisz', [InvoicesController::class, 'store'])->name('invoices.store');
